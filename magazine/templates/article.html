@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load comments %}
+{% load markup %}
+{% block title %}{{ article.title  }}{% endblock %}
+{% block content %}
+
+<script type="text/javascript" charset="utf-8">
+function bindPostCommentHandler() {
+    $('#comment_form form').submit(function() {
+        $.ajax({
+            type: "POST",
+            data: $('#comment_form form').serialize(),
+            url: "{% comment_form_target %}",
+            cache: false,
+            dataType: "html",
+            success: function(html, textStatus) {
+                $('#cmt').replaceWith(html);
+                $('#comment_form form')[0].reset();
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $('#comment_form form').replaceWith('Your comment was unable to be posted at this time.  We apologise for the inconvenience.');
+            }
+        });
+        return false;
+    });
+}
+ 
+$(document).ready(function() {
+    bindPostCommentHandler();
+});
+</script>  
+
+<div>
+	<div style="float:left;margin-left:50px;width:800px;">
+		<div>
+			<h1>{{ article.title}}</h1><br/><br/>
+			<h2>作者：{{ article.author}}&nbsp;&nbsp;&nbsp;&nbsp;
+			日期：{{ article.publish_time|date:"Y-F-j"}}</h2><br/>
+		</div>
+		<div>
+			{% ifnotequal article.article_image ""%}
+				<img src="/media//{{ article.article_image }}"></img>
+			{% endifnotequal %}
+		</div>
+		<div>
+			{{ article.html_content|safe}}
+		</div>
+	</div>
+	<article id="cmt" style="float:left;margin-left:50px;margin-top:100px;width:800px;">
+    {% get_comment_count for article as comment_count %}
+    	{% if comment_count %} 
+        <h4 class="muted comtop">{{ comment_count }} 条评论</h4>
+        <hr class="soften">  
+      {% else%}
+        <h4 class="muted comtop">暂无评论</h4>
+        <hr class="soften">  
+      {% endif%}
+    {% get_comment_list for article as article_com %}
+    {% for comment in article_com %}
+        <div class="container-fluid none-padding">
+            <div class="row-fluid">
+                <div class="span10">
+                <p class="muted"><small>{{ comment.user_name }}</small><small>{{ comment.submit_date|date:"F,j,Y" }}</small></p>      
+                {{ comment.comment|markdown:'safe,codehilite' }} 
+                </div>
+            </div>           
+        </div>
+        <hr class="soften">                   
+    {% endfor %}
+	</article>
+	<article >
+	{% get_comment_form for article as articleform %}  
+	<div style="float:left;margin-left:50px;margin-top:100px;width:700px" id="comment_form">
+		<h4 class="muted comtop">发表评论</h4><br/><br/>
+		<form action='{%comment_form_target%}' method='post'>
+			 {% csrf_token %}
+		    {{articleform.object_pk}}
+		    {{articleform.content_type}}
+		    {{articleform.timestamp}}
+		    {{articleform.security_hash}}
+		    <p><label for="id_name">姓名（必填）：</label><input name="name" id="id_name"></p>
+		    <p><label for="id_email">邮箱（必填）：</label><input name="email" id="id_email"></p>
+		    <p><label for="id_url">网站（可选）：</label><input name="url" id="id_url"></p>
+		    <p><label for="id_comment">评论（必填）：</label></p>
+		    <p><textarea id="id_comment" rows="10" cols="40" name="comment"></textarea></p>
+		    <p>&nbsp;&nbsp;&nbsp;&nbsp;*评论框支持markdown格式</p>
+		    <p style="display:none;"><label for="id_honeypot">如果你在该字段中输入任何内容，那么你的评论就会被视为垃圾评论。</label> <input type="text" name="honeypot" id="id_honeypot"></p>
+		    <p><input name="post" value="发表" type="submit" /></p>
+		    <input type='hidden' name='next' value="/article/{{article.id}}/showcomment/"  %}'/>
+		</form>
+	<div>
+	<article >
+</div>
+{% endblock %}

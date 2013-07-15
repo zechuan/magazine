@@ -1,0 +1,43 @@
+body {
+ background: url('../images/bg1.png');
+}
+
+p {
+ font-family: Arial, sans-serif;
+ font-size: 13px;
+ color: #7c7a7a;
+ line-height: 19px;
+}
+h1 {
+ font-family: 'RomeralRegular';
+ font-size: 24px;
+ font-weight: normal;
+ letter-spacing: 0.5px;
+ color: #413e3e;
+ font-smooth: always;
+ -webkit-font-smoothing: antialiased;
+}
+
+h1 span {
+ color: #ac3b2f;
+}
+
+h2 {
+ font-size: 18px; 
+ line-height: 18px;
+ color: #413e3e;
+}
+
+h2 span {
+ color: #AC3B2F;
+}
+
+h3 {
+ font-size: 12px; 
+ line-height: 18px;
+ color: #545451;
+}
+
+canvas {
+ overflow: hidden;
+}

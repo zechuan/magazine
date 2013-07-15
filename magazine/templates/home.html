@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Reading</title>
+ 
+ <!-- CSS -->
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/style.css"> 
+ <link rel="stylesheet" href="css/nivo-slider.css"> 
+ <link rel="stylesheet" href="css/validation.css">   
+ <!-- Jquery magic -->
+ <script src="js/jquery-1.6.4.min.js"></script>
+ 
+ <script src="js/jquery.easing.1.3.js"></script>
+ <script src="js/jquery.nivo.slider.pack.js"></script> 
+ <script src="js/jquery.scrollTo-min.js"></script> 
+ <script src="js/zoombox.js"></script> 
+ <script src="js/validation.js"></script>
+ 
+ <script src='js/main.js'></script>
+</head>
+
+<body>
+  <!-- Show loading gif image while page loads -->
+  <div class="loading"></div>
+  
+  <!-- Top dark bar -->
+  <header id="banner">
+   <div class="center-wrap">
+    <div id="logo">
+     <h1><a href="#"><img src="images/logo.png" alt="Kallan" /></a></h1>
+    </div>
+  
+    <nav id="menu"><ul>
+     <li class="current"><a href="#">Newest</a></li>
+     <li><a href="">Back Issues</a></li>
+          <li><a href="contact">Contact</a></li>          
+    </ul></nav>
+   </div>	
+  </header>
+  
+  <!-- Home section -->
+  <section id="home">
+   <!-- Change slider images here -->
+   <div id="slider" class="nivoSlider">
+	<a href="#"><img src="images/slide1.jpg" alt="sliderImg1" title="<p>Flexible and functional</p> <span>Easy to modify and customize</span>" /></a>
+	<a href="#"><img src="images/slide2.jpg" alt="sliderImg2" title="<p>Modern minimalist portfolio</p> <span>Packed with HTML5 and CSS3 goodness</span>" /></a>
+	<a href="#"><img src="images/slide3.jpg" alt="sliderImg3" title="<p>Grid 960 System</p> <span>Suoer easy layout customization</span>" /></a>
+	<a href="#"><img src="images/slide4.jpg" alt="sliderImg4" title="<p>Okay you get the hang of it</p> <span>Another caption here</span>" /></a>
+   </div>
+   <div id="shadow"></div>
+
+   
+   <div class="padding currentIssue">
+      <div class="one-third">
+	  <a href="portfolio/p3.html" class="zoombox">
+	    <img src="images/img3.jpg" alt="Insanely Great" />
+	    <div class="zoomHome">
+	    <img src="images/zoomHome.png" alt="zoom icon" />
+	    </div> 
+	  </a>
+	<h2>Beautiful Design</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. Donec vel sem nibh, eu aliquet leo.justo vel lorem.</p>
+      </div>
+      <div class="one-third">
+	<a href="images/slide1.jpg" class="zoombox">
+	      <img src="images/img1.jpg" alt="Showcase like never before" />
+	      <div class="zoomHome">
+	      <img src="images/zoomHome.png" alt="zoom icon" />
+	      </div> 
+	    </a>
+	<h2>Grid 960 System</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. Donec vel sem nibh, eu aliquet leo  tempus ac elit.</p>
+      </div>
+      <div class="one-third">
+	<a href="portfolio/images/p4_full.jpg" class="zoombox">
+	      <img src="images/img2.jpg" alt="Showcase like never before" />
+	      <div class="zoomHome">
+	      <img src="images/zoomHome.png" alt="zoom icon" />
+	      </div> 
+	    </a>
+	<h2>Smooth Effects</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit.  Praesentet metus in ante placerat sodales.</p>
+      </div>
+
+      <div class="intro-section margin clear">
+	  <div class="padding">
+	  <div class="one-third">
+	    <div class="tiny-margin">
+	    <a class="scrollTo" href="#portfolio"><div class="button-red right">阅读本期所有文章</div></a>
+	    </div> 
+	  </div>
+	  </div>  		
+	</div> 
+      </div>
+  </section>
+</body>
+</html>

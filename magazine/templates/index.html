@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Fabric+</title>
+ 
+ <!-- CSS -->
+ <link rel="stylesheet" href="/static/css/normalize.css">
+ <link rel="stylesheet" href="/static/css/style.css"> 
+ <link rel="stylesheet" href="/static/css/nivo-slider.css"> 
+ <link rel="stylesheet" href="/static/css/validation.css">   
+ <!-- Jquery magic -->
+ <script src="/static/js/jquery-1.6.4.min.js"></script>
+ 
+ <script src="/static/js/jquery.easing.1.3.js"></script>
+ <script src="/static/js/jquery.nivo.slider.pack.js"></script> 
+ <script src="/static/js/jquery.scrollTo-min.js"></script> 
+ <script src="/static/js/zoombox.js"></script> 
+ <script src="/static/js/validation.js"></script>
+ 
+ <script src='/static/js/main.js'></script>
+</head>
+
+<body>
+  <!-- Show loading gif image while page loads -->
+  <div class="loading"></div>
+  
+  <!-- Top dark bar -->
+  <header id="banner">
+   <div class="center-wrap">
+    <div id="logo">
+     <h1><a href="#"><img src="/static/images/logo.png" alt="Kallan" /></a></h1>
+    </div>
+  
+    <nav id="menu"><ul>
+     <li class="current"><a href="#">Home</a></li>
+     <li><a href="#about">About</a></li>
+     <li><a href="#portfolio">Portfolio</a></li>
+     <li><a href="#features">Features</a></li> 
+          <li><a href="#contact">Contact</a></li>          
+    </ul></nav>
+   </div>	
+  </header>
+  
+  <!-- Home section -->
+  <section id="home">
+   <!-- Change slider images here -->
+   <div id="slider" class="nivoSlider">
+	<a href="#"><img src="/static/images/slide1.jpg" alt="sliderImg1" title="<p>Flexible and functional</p> <span>Easy to modify and customize</span>" /></a>
+	<a href="#"><img src="/static/images/slide2.jpg" alt="sliderImg2" title="<p>Modern minimalist portfolio</p> <span>Packed with HTML5 and CSS3 goodness</span>" /></a>
+	<a href="#"><img src="/static/images/slide3.jpg" alt="sliderImg3" title="<p>Grid 960 System</p> <span>Suoer easy layout customization</span>" /></a>
+	<a href="#"><img src="/static/images/slide4.jpg" alt="sliderImg4" title="<p>Okay you get the hang of it</p> <span>Another caption here</span>" /></a>
+   </div>
+   <div id="shadow"></div>
+	  
+   <div class="padding">
+    <div class="one-third">
+     <a href="/static/images/slide3.jpg" class="zoombox">
+	  <img src="/static/images/img3.jpg" alt="Insanely Great" />
+	  <div class="zoomHome">
+	   <img src="/static/images/zoomHome.png" alt="zoom icon" />
+	  </div> 
+	 </a>
+     <h2>Beautiful Design</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. Donec vel sem nibh, eu aliquet leo.justo vel lorem.</p>
+    </div>
+    <div class="one-third">
+     <a href="/static/images/slide1.jpg" class="zoombox">
+	  <img src="/static/images/img1.jpg" alt="Showcase like never before" />
+	  <div class="zoomHome">
+	   <img src="/static/images/zoomHome.png" alt="zoom icon" />
+	  </div> 
+	 </a>
+     <h2>Grid 960 System</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. Donec vel sem nibh, eu aliquet leo  tempus ac elit.</p>
+    </div>
+    <div class="one-third">
+     <a href="/static/portfolio/images/p4_full.jpg" class="zoombox">
+	  <img src="/static/images/img2.jpg" alt="Showcase like never before" />
+	  <div class="zoomHome">
+	   <img src="/static/images/zoomHome.png" alt="zoom icon" />
+	  </div> 
+	 </a>
+     <h2>Smooth Effects</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit.  Praesentet metus in ante placerat sodales.</p>
+    </div>
+   </div> 
+
+   <div class="intro-section margin clear">
+    <div class="padding">
+     <div class="two-third">
+      <h1><span>Stunning designs</span> and webapps</h1>	
+      <p class="half-tiny-margin">Say something catchy over here. Yeah, go on, don't hesitate</p> 		
+     </div>
+     <div class="one-third">
+      <div class="tiny-margin">
+       <a class="scrollTo" href="#portfolio"><div class="button-red right">Portfolio</div></a>
+      </div> 
+     </div>
+    </div>  		
+   </div>
+   
+   <div class="next-section margin"><a href="#about" class="scrollTo">
+    <img src="/static/images/down.png" title="Scroll to next section" alt="scroll" />
+   </a></div>	  
+  </section>
+ 
+  <!-- About Section -->
+  <section id="about">
+   <div class="intro-section">
+    <div class="padding">
+	 <div class="one-third sep half-tiny-margin">
+	  <h1><span>ABOUT</span></h1>
+	 </div>
+	 <div class="two-third">
+	  <p>Fabric+ is a small creative design agency located in New York. We are a well knit team of designers and programmers that always takes it the extra mile for you.</p>
+	 </div>
+	</div>   
+   </div>
+   
+   <div class="half-margin padding">
+    <div class="two-third">
+     <img class="left" src="/static/images/about.jpg" alt="about" />
+     <h2>Hello, I'm <span>John</span></h2>
+     <p>I am the head desiger at Fabric+, a small creative design agency in New York. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. Donec vel sem nibh, eu aliquet leo. Praesent dapibus, massa euismod tempus scelerisque.</p> 
+     <p>Ipsum tellus faucibus arcu, quis convallis diam justo vel lorem. Praesentet metus in ante placerat sodales. Vestibulum nec convallis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim.</p>
+     <p>Consequat et rhoncus quis, tempus ac elit. Donec vel sem nibh, eu aliquet leo. Praesent dapibus, massa euismod tempus scelerisque, ipsum tellus.Suspendisse bibendum cursus tempor. Nunc auctor est ut tortor fermentum dapibus. Nam ullamcorper lectus id nisl feugiat in iaculisNunc auctor est ut tortor fermentum dapibus. Nam ullamcorper lectus id nisl feugiat in iaculis massa porttitor. Donec enim nibh, placerat et suscipit ut, vehicula at diam consectetur adipiscing elit uisque elit enim dapibus, massa.</p>
+     <h2 class="tiny-margin">Final words</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. Donec vel sem nibh, eu aliquet leo. Praesent dapibus, massa euismod tempus scelerisque, ipsum tellus faucibus arcu, quis convallis diam justo vel lorem.</p> 
+    </div>
+    <div class="one-third">
+     <h2>Fields of expertise</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit.</p> 
+     <ul class="custom-list tick">
+      <li>Web/Graphic design</li>
+	  <li>User interface design</li>
+	  <li>HTML5/CSS3 coding</li>
+	  <li>WordPress</li>
+	  <li>Joomla</li>
+     </ul>
+     <a class="button-red" style="width: 140px;" href="#">Download Resume</a>
+    </div>
+   </div>	
+   
+   <div class="next-section margin"><a href="#portfolio" class="scrollTo">
+    <img src="/static/images/down.png" title="Scroll to next section" alt="scroll" />
+   </a></div>
+  </section>
+  
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+   <div class="intro-section">
+    <div class="padding">
+	 <div class="one-third sep half-tiny-margin">
+	  <h1><span>PORTFOLIO</span></h1>
+	 </div>
+	 <div class="two-third">
+	  <p>Here is the place to showcase your beautiful work. You can link your portfolio items to just about anything. Have a look around and click on some of the portfolio items to see what you can do.</p>
+	 </div>
+	</div>   
+   </div>
+   <div class="tiny-margin padding">
+    <div class="full-width">
+     <ul class="portHolder">
+      <li class="port">
+       <a title="Portfolio Item" href="/static/portfolio/images/p1_full.jpg" class="zoomboxP">
+	    <img src="/static/images/p1.jpg" alt="item1" />
+		<div class="zoomHomeP">
+	     <img src="/static/images/zoomHomeP.png" alt="zoom icon" />
+	    </div>
+	   </a>
+	  </li>
+      <li class="port">
+       <a title="Link to video" href="/static/portfolio/p2.html" class="zoomboxP">
+	    <img src="/static/images/p2.jpg" alt="item2" />
+		<div class="zoomHomeP">
+	     <img src="/static/images/zoomHomeP.png" alt="zoom icon" />
+	    </div>
+	   </a>
+	  </li>
+      <li class="port">
+       <a title="Portfolio Item" href="/static/portfolio/p3.html" class="zoomboxP">
+	    <img src="/static/images/p3.jpg" alt="item3" />
+		<div class="zoomHomeP">
+	     <img src="/static/images/zoomHomeP.png" alt="zoom icon" />
+	    </div>
+	   </a>
+	  </li>
+      <li class="port">
+       <a title="Portfolio Item" href="/static/portfolio/images/p4_full.jpg" class="zoomboxP">
+	    <img src="/static/images/p4.jpg" alt="item4" />
+		<div class="zoomHomeP">
+	     <img src="/static/images/zoomHomeP.png" alt="zoom icon" />
+	    </div>
+	   </a>
+	  </li>
+      <li class="port">
+       <a title="Portfolio Item" href="/static/portfolio/images/p5_full.jpg" class="zoomboxP">
+	    <img src="/static/images/p5.jpg" alt="item5" />
+		<div class="zoomHomeP">
+	     <img src="/static/images/zoomHomeP.png" alt="zoom icon" />
+	    </div>
+	   </a>
+	  </li>
+      <li class="port">
+       <a title="Portfolio Item" href="/static/portfolio/images/p6_full.jpg" class="zoomboxP">
+	    <img src="/static/images/p6.jpg" alt="item6" />
+		<div class="zoomHomeP">
+	     <img src="/static/images/zoomHomeP.png" alt="zoom icon" />
+	    </div>
+	   </a>
+	  </li>
+      <li class="port">
+       <a title="Portfolio Item" href="/static/portfolio/images/p7_full.jpg" class="zoomboxP">
+	    <img src="/static/images/p7.jpg" alt="item7" />
+		<div class="zoomHomeP">
+	     <img src="/static/images/zoomHomeP.png" alt="zoom icon" />
+	    </div>
+	   </a>
+	  </li>
+      <li class="port">
+       <a title="Portfolio Item" href="/static/portfolio/images/p8_full.jpg" class="zoomboxP">
+	    <img src="/static/images/p8.jpg" alt="item8" />
+		<div class="zoomHomeP">
+	     <img src="/static/images/zoomHomeP.png" alt="zoom icon" />
+	    </div>
+	   </a>
+	  </li>
+      <li class="port">
+       <a title="Portfolio Item" href="/static/portfolio/images/p9_full.jpg" class="zoomboxP">
+	    <img src="/static/images/p9.jpg" alt="item9" />
+		<div class="zoomHomeP">
+	     <img src="/static/images/zoomHomeP.png" alt="zoom icon" />
+	    </div>
+	   </a>
+	  </li>
+      <li class="port">
+       <a title="Portfolio Item" href="/static/portfolio/images/p10_full.jpg" class="zoomboxP">
+	    <img src="/static/images/p10.jpg" alt="item10" />
+		<div class="zoomHomeP">
+	     <img src="/static/images/zoomHomeP.png" alt="zoom icon" />
+	    </div>
+	   </a>
+	  </li>
+      <li class="port">
+       <a title="Portfolio Item" href="/static/portfolio/images/p11_full.jpg" class="zoomboxP">
+	    <img src="/static/images/p11.jpg" alt="item11" />
+		<div class="zoomHomeP">
+	     <img src="/static/images/zoomHomeP.png" alt="zoom icon" />
+	    </div>
+	   </a>
+	  </li>
+      <li class="port">
+       <a title="Portfolio Item" href="/static/portfolio/images/p12_full.jpg" class="zoomboxP">
+	    <img src="/static/images/p12.jpg" alt="item12" />
+		<div class="zoomHomeP">
+	     <img src="/static/images/zoomHomeP.png" alt="zoom icon" />
+	    </div>
+	   </a>
+	  </li>
+     </ul>
+    </div>
+   </div>	
+   
+   <div class="next-section"><a href="#features" class="scrollTo">
+    <img src="/static/images/down.png" title="Scroll to next section" alt="scroll" />
+   </a></div>
+  </section>
+  
+  <!-- Features Section -->
+  <section id="features">
+   <div class="intro-section">
+    <div class="padding">
+	 <div class="one-third sep half-tiny-margin">
+	  <h1><span>FEATURES</span></h1>
+	 </div>
+	 <div class="two-third">
+	  <p>The template has some nifty features that make it easy for you to use. One of them is the 960 grid system that makes is super easy for you to create different columns and layouts for pages.</p>
+	 </div>
+	</div>   
+   </div>
+   <div class="margin padding">
+    <h2>Grid 960 System = Super simple layouts</h2>
+	 <div class="full-width"> <div class="one-half">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. Donec vel sem nibh, eu aliquet leo. Praesent dapibus, massa euismod tempus scelerisque.</p> 
+	  </div> <div class="one-half">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. Donec vel sem nibh, eu aliquet leo. Praesent dapibus, massa euismod tempus scelerisque.</p> 
+	  </div>
+	 </div> 
+	 <div class="full-width">
+	  <div class="one-third">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. Donec vel sem nibh, eu aliquet leo. </p> 
+	  </div>
+	  <div class="one-third">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. Donec vel sem nibh, eu aliquet leo. </p> 
+	  </div>
+	  <div class="one-third">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. Donec vel sem nibh, eu aliquet leo. </p> 
+	  </div>
+	 </div> 
+	 <div class="full-width">
+	  <div class="one-fourth">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. </p> 
+	  </div>
+	  <div class="one-fourth">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. </p> 
+	  </div>
+	  <div class="one-fourth">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. </p> 
+	  </div>
+	  <div class="one-fourth">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. </p> 
+	  </div>
+	</div> 
+	<div class="two-third">	 
+     <h1>This is a heading</h1>
+     <h2>This is a heading</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit enim, consequat et rhoncus quis, tempus ac elit. Donec vel sem nibh, eu aliquet leo. Praesent dapibus, massa euismod tempus scelerisque, ipsum tellus faucibus arcu, quis convallis diam justo vel lorem.</p> 
+	 <a class="button" href="#">Flexible button</a>
+	</div>
+	<div class="one-third">
+	 <h2 style="padding-top: 10px;">Cystom list style</h2>
+     <ul class="custom-list tick">
+      <li>Web/Graphic design</li>
+	  <li>User interface design</li>
+ 	  <li>WordPress</li>
+	  <li>HTML5/CSS3 coding</li>
+     </ul>
+	</div>
+   </div>	
+   
+   <div class="next-section"><a href="#contact" class="scrollTo">
+    <img src="/static/images/down.png" title="Scroll to next section" alt="scroll" />
+   </a></div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact">
+   <div class="intro-section">
+    <div class="padding">
+	 <div class="one-third sep half-tiny-margin">
+	  <h1><span>CONTACT</span></h1>
+	 </div>
+	 <div class="two-third">
+	  <p>We would love to talk to you about all or any of your webdesign needs. You can pop to our office anytime you wan't for a cup of coffee or just give us a call to set a meeting.</p>
+	 </div>
+	</div>   
+   </div>
+   <div class="margin padding">
+    <div class="two-third">
+     <div id="contact-form" class="clearfix">
+      <h2>Fill out our contact form below to get in touch with us!</h2>
+	  <p id="success">Thanks for your message! We will get back to you ASAP!</p>
+      <form class="half-tiny-margin" method="post">
+       <label for="name">Name: </label>
+       <input type="text" id="name" name="name" value="" placeholder="John Doe" class="required" />
+
+       <label for="email">Email: </label>
+       <input type="text" id="email" name="email" value="" placeholder="johndoe@example.com" class="isemail" />
+
+       <label for="message">Message: </label>
+       <textarea id="message" name="message" placeholder="Your message" class="required"></textarea>
+
+       <span id="loading"></span>
+	    <br />
+       <input class="button-red submit" type="submit" value="Alrighty!" />
+      </form>
+     </div>
+    </div>
+    <div class="one-third">
+	<!-- Edit these lines to your info -->
+     <h2>More info</h2>
+     <ul class="contact-info">
+	  <li class="address">725 Fifth Avenue New York</li>
+	  <li class="phone">1 855 421 6378</li>
+	  <li class="email">contact@fabricplus.com</li>
+	 </ul>
+	 <h2>Let's get social</h2>
+	 <ul class="social">
+	  <!-- Replace the "http://www.facebook.com/" with your own social network links -->
+      <li><a href="http://www.facebook.com/"><img src="/static/images/facebook.png" alt="facebook" /></a></li>
+      <li><a href="http://www.twitter.com/"><img src="/static/images/twitter.png" alt="twitter" /></a></li>
+      <li><a href="http://www.flickr.com/"><img src="/static/images/flickr.png" alt="flickr" /></a></li>
+      <li><a href="http://www.stumbleupon.com/"><img src="/static/images/stumbleupon.png" alt="stumbleupon" /></a></li>
+      <li><a href="http://www.vimeo.com/"><img src="/static/images/vimeo.png" alt="vimeo" /></a></li>
+      <li><a href="http.//www.youtube.com/"><img src="/static/images/youtube.png" alt="youtube" /></a></li>
+     </ul>
+    <!-- End Edit -->	 
+    </div>
+   </div> 
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+   <div class="center-wrap">
+    <p class="left">&copy; Copyright 2011. All Rights Reserved.</p>
+    <a class="right" href="#"><img src="/static/images/pointer.png" alt="top" /></a>
+   </div>
+  </footer>
+</body>
+</html>

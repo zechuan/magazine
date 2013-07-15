@@ -1,0 +1,56 @@
+.journalbox{
+	padding-top:50px;
+}
+.journal{
+	width:861px;
+	height:100px;
+	margin-left:50px;
+	padding:5px;
+}
+.imgbox{
+	background:red;
+	width:140px;
+	height:100px;
+	float:left;
+}
+.jourimg{
+	width:140px;
+	height:100px;
+}
+.abstrate{
+	width:650px;
+	height:100px;
+	float:left;
+	margin-left:50px;
+}
+a h4{
+	color:black;
+}
+a:hover  h4{
+	color:grey;	
+}
+a:visited  h4{
+	color:grey;
+}
+.abs{
+	text-indent:2em;
+}
+li a{
+	color:black;
+}
+li a:hover{
+	color:grey;
+}
+li h1{
+	color:black;
+	margin-top:20px;
+}
+.articlebox{
+	margin-left:200px;
+}
+ul li{
+	list-style:none;
+}
+ul li .zoombox{
+	height:20px;
+}

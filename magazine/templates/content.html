@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Fabric+</title>
+ 
+ <!-- CSS -->
+ <link rel="stylesheet" href="/static/css/normalize.css">
+ <link rel="stylesheet" href="/static/css/style.css"> 
+ <link rel="stylesheet" href="/static/css/nivo-slider.css"> 
+ <link rel="stylesheet" href="/static/css/validation.css">   
+  <link rel="stylesheet" href="/static/css/css.css">  
+ <!-- Jquery magic -->
+ <script src="/static/js/jquery-1.6.4.min.js"></script>
+ 
+ <script src="/static/js/jquery.easing.1.3.js"></script>
+ <script src="/static/js/jquery.nivo.slider.pack.js"></script> 
+ <script src="/static/js/jquery.scrollTo-min.js"></script> 
+ <script src="/static/js/zoombox.js"></script> 
+ <script src="/static/js/validation.js"></script>
+ 
+ <script src='/static/js/main.js'></script>
+</head>
+
+<body>
+  <!-- Show loading gif image while page loads -->
+  <div class="loading"></div>
+  
+  <!-- Top dark bar -->
+  <header id="banner">
+   <div class="center-wrap">
+    <div id="logo">
+     <h1><a href="#"><img src="/static/images/logo.png" alt="Kallan" /></a></h1>
+    </div>
+  
+    <nav id="menu"><ul>
+     <li><a href="/journal/new/">首页</a></li>
+     <li><a href="/journals/">期刊列表</a></li>
+    </ul></nav>
+   </div>	
+  </header>
+  <section id="articles">
+	<div class="articlebox">
+		<ul>
+			{% for article in articles%}
+				<li><a href="/article/{{ article.id}}/" class="zoombox"><h1>{{ article.title }}</h1></a></li>
+			{% endfor %}
+		<ul>
+	</div>
+  </section>
+  
+  
+</body>
+</html>
